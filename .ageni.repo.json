@@ -1,0 +1,33 @@
+{
+  "version": "6.0.0",
+  "name": "app",
+  "description": "app repository with ageni conventions",
+  "project": {
+    "path": "..",
+    "linked": true
+  },
+  "workspace": {
+    "path": "../../../.ageni",
+    "linked": true
+  },
+  "convention": {
+    "profile": "ageni",
+    "inheritance": "extend",
+    "namingConventions": {
+      "classes": "PascalCase",
+      "interfaces": "PascalCase",
+      "types": "PascalCase",
+      "enums": "PascalCase",
+      "functions": "camelCase",
+      "variables": "camelCase",
+      "constants": "UPPER_SNAKE_CASE"
+    }
+  },
+  "eslint": {
+    "enabled": true,
+    "configPath": "eslint.config.js",
+    "plugins": [
+      "eslint-plugin-check-file"
+    ]
+  }
+}
